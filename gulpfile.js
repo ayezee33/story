@@ -5,7 +5,7 @@ browserSync = require('browser-sync'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
 imagemin = require ('gulp-imagemin'),
-imagecache = require ('gulp-cache'),
+   cache = require ('gulp-cache'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
@@ -32,11 +32,10 @@ gulp.task('images', function() {
   return gulp.src('src/images/**/*')
     .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
     .pipe(gulp.dest('dist/img'))
-    .pipe(notify({ message: 'Images task complete' }));
 });
 
 gulp.task('clean', function() {
-  del(['dist', 'css/application.css*', 'js/app*.js*' , 'images/']);
+  del(['dist', 'css/application.css*', 'js/app*.js*']);
 });
 
 gulp.task('compileSass', function() {
@@ -46,7 +45,7 @@ gulp.task('compileSass', function() {
       .pipe(maps.write('./'))
       .pipe(gulp.dest('dist/css'));
 });
-gulp.task("build", ['minifyScripts', 'compileSass'], function() {
+gulp.task("build", ['minifyScripts', 'compileSass' ,'images'], function() {
   return gulp.src(["css/**/*.scss", "js/**/*.js", "images/**", "fonts/**"], { base: './'})
             .pipe(gulp.dest('dist'));
 });
