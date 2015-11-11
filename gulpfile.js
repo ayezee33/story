@@ -4,6 +4,8 @@ var gulp = require('gulp'),
 browserSync = require('browser-sync'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
+imagemin = require ('gulp-imagemin'),
+imagecache = require ('gulp-cache'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
@@ -26,8 +28,15 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
     .pipe(gulp.dest('dist/js'));
 });
 
+gulp.task('images', function() {
+  return gulp.src('src/images/**/*')
+    .pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+    .pipe(gulp.dest('dist/img'))
+    .pipe(notify({ message: 'Images task complete' }));
+});
+
 gulp.task('clean', function() {
-  del(['dist', 'css/application.css*', 'js/app*.js*']);
+  del(['dist', 'css/application.css*', 'js/app*.js*' , 'images/']);
 });
 
 gulp.task('compileSass', function() {
