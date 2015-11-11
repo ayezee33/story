@@ -38,7 +38,7 @@ gulp.task('compileSass', function() {
       .pipe(gulp.dest('dist/css'));
 });
 gulp.task("build", ['minifyScripts', 'compileSass'], function() {
-  return gulp.src(["css/**/*.scss", "js/**/*.js", "img/**", "fonts/**"], { base: './'})
+  return gulp.src(["css/**/*.scss", "js/**/*.js", "images/**", "fonts/**"], { base: './'})
             .pipe(gulp.dest('dist'));
 });
 // Static Server + watching scss/html files
