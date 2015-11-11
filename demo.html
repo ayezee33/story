@@ -20,31 +20,77 @@
 
     <div class="container">
       <div class="row">
-        <div class="eight offset-by-two columns">
+        <div class="twelve columns">
+          <h1 style="text-align:center;">How to use Skelly</h1>
+          <p style="text-align:center;">
+            Simply fill out the form to the left and watch your answers appear in the text on the right. When you are statisfied with your answers click the print button and let skelly turn your form into a PDF.
+          </p>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
           <!-- The above form looks like this -->
-          <form>
+          <form class="demo-form">
+            <h3>2016 Goals</h3>
             <div class="row">
-              <div class="six columns">
-                <label for="exampleEmailInput">Your email</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-              </div>
-              <div class="six columns">
-                <label for="exampleRecipientInput">Reason for contacting</label>
-                <select class="u-full-width" id="exampleRecipientInput">
-                  <option value="Option 1">Questions</option>
-                  <option value="Option 2">Admiration</option>
-                  <option value="Option 3">Can I get your number?</option>
-                </select>
+              <div class="twleve columns">
+                <label for="name">My name is:</label>
+                <input class="u-full-width" type="text" placeholder="John Smith">
               </div>
             </div>
-            <label for="exampleMessage">Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
-            <input class="button-primary" type="submit" value="Submit">
+
+            <div class="row">
+              <div class="twleve columns">
+                <label for="3goal">My 3 month goal is:</label>
+                <input class="u-full-width" type="text" placeholder="Learn Javascript">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="twleve columns">
+                <label for="3goalReason">The reason I want to complete this goal:</label>
+                <textarea class="u-full-width" type="text" placeholder="I want to build awesome things on the internet"></textarea>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="twleve columns">
+                <label for="12goal">My 2016 goal is:</label>
+                <input class="u-full-width" type="text" placeholder="Develop a user friendly app">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="twleve columns">
+                <label for="measure">I will measure my goal by:</label>
+                <textarea class="u-full-width" type="text" placeholder="If I put an app in the app store"></textarea>
+              </div>
+            </div>
+
+            <input class="button-primary" type="submit" value="Print My Goals">
           </form>
+        </div>
+
+
+        <div class="six columns">
+          <p>
+            My name is <b>[first field output]</b>, and I am going to commit to some goals. It has been proven that when you write down goals, visualize them, and have metrics for tracking their success you are more likely to complete your goals. Finishing my goals is important to me. Once I have my goals I will display them loud and proud and hold myself accountable to them.
+          </p>
+          <hr>
+          <h2>My 3 Month Goal Is...</h2>
+          <p>
+          Within the next three months I want to <b>[output of field number two]</b>. I want to acheive this goal because
+          <b>[ouptut of field number three].</b></p>
+          <hr>
+          <h2>My 2016 Month Goal Is...</h2>
+          <p>
+          By this time next year I want to <b>[output of field number four]</b>. I want to acheive this goal because
+          <b>[ouptut of field number five].</b></p>
         </div>
       </div>
     </div>
