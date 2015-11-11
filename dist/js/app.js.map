@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA","file":"app.js","sourcesContent":["var marked = require('marked');\nconsole.log(marked('I am using __markdown__.'));v\n"],"sourceRoot":"/source/"}
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA","file":"app.js","sourcesContent":["console.log(marked('I am using __markdown__.'));v\n"],"sourceRoot":"/source/"}

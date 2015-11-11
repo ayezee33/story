@@ -9,6 +9,7 @@ imagemin = require ('gulp-imagemin'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
+    marked = require('marked'),
      del = require('del');
 
 gulp.task("concatScripts", function() {
