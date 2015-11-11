@@ -1,0 +1,81 @@
+.home {
+
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+		margin:0 0 10rem 0;
+	}
+	.subheadline {
+		color: #444;
+		font-weight: 300;
+		font-size: 2rem;
+		text-align: center;
+	}
+	i {
+		display: block;
+		margin: 5% auto;
+		text-align: center;
+		font-size: 7rem;
+		color: $primary-color;
+	}
+	button {
+		display: block;
+		margin: 0 auto;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 3rem;
+	}
+	blockquote {
+		font-size: 3rem;
+		text-align: center;
+		line-height: 1.4;
+		font-weight: 100;
+		color: #555;
+	}
+
+.testimonial-wrapper {
+	text-align: center;
+}
+.avatar {
+	display: inline-block;
+	margin: 0 auto;
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.cite {
+	display: inline-block;
+	font-size: 1.8rem;
+	opacity: 0.6;
+	margin-left: 1rem;
+}
+}
+.center {
+	text-align: center;
+}
+
+.diagonal {
+	color: $white;
+	margin-top: 100px;
+	padding: 50px 0;
+ 	position: relative;
+ 	background: $primary-color;
+
+ 	blockquote {
+ 		color: $white;
+ 	}
+}
+.diagonal:before {
+ 	position: absolute;
+ 	margin-top: -100px;
+ 	content: '';
+ 	border-style: solid;
+	border-width: 0 0 5rem 100vw;
+	border-color: transparent $primary-color $primary-color transparent;
+ }

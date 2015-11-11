@@ -1,0 +1,25 @@
+{
+  "name": "modest-css",
+  "description": "A lightweight SASS framework",
+  "main": "application.css",
+  "authors": [
+    "AyeZee33"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "lightweight",
+    "framework"
+  ],
+  "homepage": "https://github.com/ayezee33/modest-css",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
