@@ -2,9 +2,8 @@
 <html>
 <head>
 <title>Modest SASS Framework</title>
-<script src="dist/js/app.js"></script>
+<script src="dist/js/app.min.js"></script>
 <link rel="stylesheet" href="dist/css/application.css">
-<link rel="stylesheet" href="src/demo.css">
 </head>
 
   <body>
@@ -42,5 +41,14 @@
           </div>
         </div>
       </section>
+
+      <div id="content">
+        
+      </div>
+        <script>
+          document.getElementById('content').innerHTML =
+            marked('# Marked in browser\n\nRendered by **marked**.');
+        </script>
+
   </body>
 </html>
