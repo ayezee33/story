@@ -35,7 +35,7 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img'))
 });
 
-gulp.task('compileSass', function() {
+gulp.task('sass', function() {
   return gulp.src("src/scss/application.scss")
       .pipe(maps.init())
       .pipe(sass())
@@ -48,20 +48,14 @@ gulp.task('clean', function() {
 });
 
 
-gulp.task("build", ['minifyScripts', 'compileSass' ,'images'], function() {
+gulp.task("build", ['minifyScripts', 'sass' ,'images'], function() {
   return gulp.src(["css/**/*.scss", "js/**/*.js", "images/**", "fonts/**"], { base: './'})
             .pipe(gulp.dest('dist'));
 });
 
-// Compile sass into CSS & auto-inject into browsers
-gulp.task('sass', function() {
-    return gulp.src("src/scss/**/*.scss")
-        .pipe(sass())
-        .pipe(gulp.dest("dist/css/"))
-        .pipe(browserSync.stream());
-});
+
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('watch', function() {
 
     browserSync.init({
         server: "./"
@@ -72,8 +66,6 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("/src/js/*.js").on('change', browserSync.reload);
 });
 
-
-
-gulp.task("default", ["serve"], function() {
+gulp.task("default", function() {
   gulp.start('build');
 });
