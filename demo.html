@@ -2,9 +2,7 @@
 <html>
 <head>
 <title>Modest SASS Framework</title>
-<script src="dist/js/app.js"></script>
 <link rel="stylesheet" href="dist/css/application.css">
-<link rel="stylesheet" href="src/demo.css">
 </head>
 
   <body>
@@ -40,14 +38,14 @@
             <div class="row">
               <div class="twleve columns">
                 <label for="name">My name is:</label>
-                <input class="u-full-width" type="text" placeholder="John Smith">
+                <input id="firstName" class="u-full-width" type="text" placeholder="John Smith">
               </div>
             </div>
 
             <div class="row">
               <div class="twleve columns">
-                <label for="3goal">My 3 month goal is:</label>
-                <input class="u-full-width" type="text" placeholder="Learn Javascript">
+                <label for="threeMonthGoal">My 3 month goal is:</label>
+                <input id="threeMonthGoal" class="u-full-width" type="text" placeholder="Learn Javascript">
               </div>
             </div>
 
@@ -72,12 +70,13 @@
               </div>
             </div>
 
-            <input class="button-primary" type="submit" value="Print My Goals">
+            <input id="submitButton" class="button-primary" type="submit" value="Print My Goals">
           </form>
         </div>
 
 
         <div class="six columns">
+          <p id="result"></p>
           <p>
             My name is <b>[first field output]</b>, and I am going to commit to some goals. It has been proven that when you write down goals, visualize them, and have metrics for tracking their success you are more likely to complete your goals. Finishing my goals is important to me. Once I have my goals I will display them loud and proud and hold myself accountable to them.
           </p>
@@ -94,5 +93,8 @@
         </div>
       </div>
     </div>
+
+    <script src="dist/js/app.min.js"></script>
+
   </body>
 </html>
