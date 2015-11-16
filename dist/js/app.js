@@ -5,9 +5,6 @@ function userNameInput () {
 }
 
 
-var submitButton = document.getElementById('submitButton');
-submitButton.addEventListener('click', userNameInput, false);
-
  document.getElementById("result").innerHTML = 'Your name is: ' + firstName + ' and your 3 month goal is ' + threeMonthGoal;
 
 //# sourceMappingURL=app.js.map
