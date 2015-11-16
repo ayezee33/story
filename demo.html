@@ -3,6 +3,7 @@
 <head>
 <title>Modest SASS Framework</title>
 <link rel="stylesheet" href="dist/css/application.css">
+<script src="dist/js/app.min.js"></script>
 </head>
 
   <body>
@@ -33,51 +34,21 @@
       <div class="row">
         <div class="six columns">
           <!-- The above form looks like this -->
-          <form class="demo-form">
-            <h3>2016 Goals</h3>
-            <div class="row">
-              <div class="twleve columns">
-                <label for="name">My name is:</label>
-                <input id="firstName" class="u-full-width" type="text" placeholder="John Smith">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="twleve columns">
-                <label for="threeMonthGoal">My 3 month goal is:</label>
-                <input id="threeMonthGoal" class="u-full-width" type="text" placeholder="Learn Javascript">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="twleve columns">
-                <label for="3goalReason">The reason I want to complete this goal:</label>
-                <textarea class="u-full-width" type="text" placeholder="I want to build awesome things on the internet"></textarea>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="twleve columns">
-                <label for="12goal">My 2016 goal is:</label>
-                <input class="u-full-width" type="text" placeholder="Develop a user friendly app">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="twleve columns">
-                <label for="measure">I will measure my goal by:</label>
-                <textarea class="u-full-width" type="text" placeholder="If I put an app in the app store"></textarea>
-              </div>
-            </div>
-
-            <input id="submitButton" class="button-primary" type="submit" value="Print My Goals">
+          <form id="frm1" action="form_action.asp">
+            First name: <input type="text" name="fname" value="Donald"><br>
+            Last name: <input type="text" name="lname" value="Duck"><br><br>
+            <input type="submit" value="Submit">
           </form>
+
+          <p>Click "Try it" to display the value of each element in the form.</p>
+
+          <button onclick="myFunction()">Try it</button>
         </div>
 
 
         <div class="six columns">
-          <p id="result"></p>
-          <p>
+          <p id="demo"></p>
+          <!--<p>
             My name is <b>[first field output]</b>, and I am going to commit to some goals. It has been proven that when you write down goals, visualize them, and have metrics for tracking their success you are more likely to complete your goals. Finishing my goals is important to me. Once I have my goals I will display them loud and proud and hold myself accountable to them.
           </p>
           <hr>
@@ -89,12 +60,11 @@
           <h2>My 2016 Month Goal Is...</h2>
           <p>
           By this time next year I want to <b>[output of field number four]</b>. I want to acheive this goal because
-          <b>[ouptut of field number five].</b></p>
+          <b>[ouptut of field number five].</b></p>-->
         </div>
       </div>
     </div>
 
-    <script src="dist/js/app.min.js"></script>
 
   </body>
 </html>
