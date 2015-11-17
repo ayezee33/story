@@ -7,4 +7,6 @@ function myFunction() {
     }
     document.getElementById("demo").innerHTML = text;
 
+function goalsInput
+
 //# sourceMappingURL=app.js.map
