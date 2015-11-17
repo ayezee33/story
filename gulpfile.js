@@ -9,23 +9,29 @@ imagemin = require ('gulp-imagemin'),
   rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
+    plumber = require('gulp-plumber'),
     marked = require('marked'),
      del = require('del');
+
 
 gulp.task("concatScripts", function() {
     return gulp.src([
         'src/js/app.js'
         ])
+    .pipe(plumber())
     .pipe(maps.init())
     .pipe(concat('app.js'))
     .pipe(maps.write('./'))
+    .pipe(plumber.stop())
     .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task("minifyScripts", ["concatScripts"], function() {
   return gulp.src("src/js/app.js")
+    .pipe(plumber())
     .pipe(uglify())
     .pipe(rename('app.min.js'))
+    .pipe(plumber.stop())
     .pipe(gulp.dest('dist/js'));
 });
 
@@ -37,8 +43,9 @@ gulp.task('images', function() {
 
 gulp.task('sass', function() {
   return gulp.src("src/scss/application.scss")
-      .pipe(maps.init())
+      .pipe(plumber())
       .pipe(sass())
+      .pipe(plumber.stop())
       .pipe(maps.write('./'))
       .pipe(gulp.dest('dist/css'));
 });

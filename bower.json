@@ -20,6 +20,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-  ]
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+  },
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0",
+    "marked": "~0.3.5"
+  }
 }
