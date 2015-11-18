@@ -3,7 +3,6 @@
 <head>
 <title>Modest SASS Framework</title>
 <link rel="stylesheet" href="dist/css/application.css">
-<script src="dist/js/app.min.js"></script>
 </head>
 
   <body>
@@ -29,9 +28,22 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <div id="demo-form">
+            <label>Name:</label>
+            <input id="name" type="text" name="fname"></input>
+            <button onclick="formIO()">Try it</button>
+          </div>
+        </div>
+        <div class="six columns">
+          <p id="output"></p>
+        </div>
+      </div>
+    </div>
 
-
-
+  <script src="dist/js/app.min.js"></script>
 
   </body>
 </html>

@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA","file":"app.js","sourcesContent":[""],"sourceRoot":"/source/"}
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","file":"app.js","sourcesContent":["function formIO() {\n    var text = document.getElementById(\"name\").value;\n\n    document.getElementById(\"output\").innerHTML = text;\n}\n"],"sourceRoot":"/source/"}
