@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -368,7 +368,7 @@ body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333; }
 
 /* Utilities
@@ -615,6 +615,7 @@ nav {
   border-color: transparent #2196F3 #2196F3 transparent; }
 
 /* Typography
+If you change the font family you will need to do so in global.scss
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -901,3 +902,14 @@ form {
 .demo-form {
   background: #F3F3F3;
   padding: 3rem 5rem; }
+
+.content p {
+  font-size: 1.8rem; }
+
+.right {
+  float: right; }
+
+.title {
+  margin: 7rem 0; }
+  .title h1 {
+    font-weight: bold; }

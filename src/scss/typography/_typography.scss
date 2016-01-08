@@ -1,6 +1,8 @@
 /* Typography
+If you change the font family you will need to do so in global.scss
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500italic,500,700,700italic);
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -24,7 +26,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 
 /* Links
