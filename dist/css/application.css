@@ -913,3 +913,33 @@ form {
   margin: 7rem 0; }
   .title h1 {
     font-weight: bold; }
+
+.lft-btn {
+  float: left; }
+
+.rt-btn {
+  float: right; }
+
+.story-nav a {
+  text-decoration: none; }
+
+.story-nav ul {
+  list-style-type: none;
+  float: right; }
+
+.story-nav li {
+  color: #ccc; }
+
+.story-nav .active {
+  color: #4a4a4a; }
+
+footer {
+  margin: 3rem 0; }
+  footer ul {
+    list-style-type: none;
+    float: right; }
+    footer ul li {
+      display: inline-block;
+      padding: 0 1rem; }
+      footer ul li i {
+        font-size: 2.8rem; }

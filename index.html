@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Modest SASS Framework</title>
+<title>Story</title>
 <link rel="stylesheet" href="dist/css/application.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
   <body>
-    <nav>
-      <div class="container">
-        <div class="row">
-          <div class="two columns">
-            <h1>Skelly</h1>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container home">
+    <div class="container">
       <div class="row">
-        <div class="eight offset-by-two columns">
-          <h1>Interactive Form To PDF</h1>
-            <p class="subheadline">Quickly turn a form into a fun way to create content and export to PDF</p>
-              <img src="dist/img/browser.png">
-                <a href="/demo.html"><button class="button-secondary">See a demo</button></a>
+        <div class="twelve columns">
+          <div class="title right">
+            <h1>Story</h1>
+              <h5>By: Alex Zerbach</h5>
           </div>
         </div>
       </div>
+    </div>
 
-      <section class="diagonal">
-        <div class="container home">
-          <div class="row">
-            <div class="twelve columns">
-              <div class="testimonial-wrapper">
-                <blockquote>"I love how simple Skelly is to set up and the forms look amazing”</blockquote>
-                  <img class="avatar" src="dist/img/avatar.jpg">
-                    <p class="cite">Skelly User</p>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="ten columns">
+          <div class="content">
+            <p>Half-giant jinxes peg-leg gillywater broken glasses large black dog Great Hall. Nearly-Headless Nick now string them together, and answer me this, which creature would you be unwilling to kiss? Poltergeist sticking charm, troll umbrella stand flying cars golden locket Lily Potter. Pumpkin juice Trevor wave your wand out glass orbs, a Grim knitted hats. Stan Shunpike doe patronus, suck his soul Muggle-Born large order of drills the trace. Bred in captivity fell through the veil, quaffle blue flame ickle diddykins Aragog. Yer a wizard, Harry Doxycide the woes of Mrs. Weasley Goblet of Fire.</p>
+
+            <p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.
+            </p>
+            <p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived bat spleens cupboard under the stairs flying motorcycle. Sirius Black Holyhead Harpies, you’ve got dirt on your nose. Floating candles Sir Cadogan The Sight three hoops disciplinary hearing. Grindlewald pig’s tail Sorcerer's Stone biting teacup. Side-along dragon-scale suits Filch 20 points, Mr. Potter.
+            </p>
+            <!--Page Navigation-->
+            <div class="lft-btn">
+              <button><i class="fa fa-arrow-left"></i> Previous</button>
+            </div>
+            <div class="rt-btn">
+              <button><i class="fa fa-arrow-right"></i> Next</button>
             </div>
           </div>
         </div>
-      </section>
-
-      <div id="content">
-
+        <div class="two columns">
+          <!--Story Navigation-->
+          <div class="story-nav">
+            <ul>
+              <a href=""><li class="active">Chapter 1</li></a>
+              <a href=""><li>Chapter 2</li></a>
+            </ul>
+          </div>
+        </div>
       </div>
-        <script>
-          document.getElementById('content').innerHTML =
-            marked('# Marked in browser\n\nRendered by **marked**.');
-        </script>
+    </div>
 
-        <script src="dist/js/app.min.js"></script>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <p><i class="fa fa-copyright"></i> AyeZee33, 2016</p>
+          </div>
+          <div class="six columns">
+            <ul>
+              <li><i class="fa fa-twitter"></i></li>
+              <li><i class="fa fa-github"></i></li>
+              <li><i class="fa fa-youtube"></i></li>
+              <li><i class="fa fa-desktop"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="dist/js/app.min.js"></script>
 
 
   </body>
