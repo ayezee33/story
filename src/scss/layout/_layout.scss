@@ -8,6 +8,9 @@
   padding: 0 20px;
   box-sizing: border-box;
  }
+ .full-width {
+   max-width: 100%!important;
+ }
 .column,
 .columns {
   width: 100%;
@@ -21,12 +24,18 @@
     width: 85%;
     padding: 0;
   }
+  .full-width {
+    max-width: 100%!important;
+  }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%;
+  }
+  .full-width {
+    max-width: 100%!important;
   }
   .column,
   .columns {

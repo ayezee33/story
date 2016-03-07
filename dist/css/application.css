@@ -424,6 +424,9 @@ there.
   padding: 0 20px;
   box-sizing: border-box; }
 
+.full-width {
+  max-width: 100% !important; }
+
 .column,
 .columns {
   width: 100%;
@@ -434,12 +437,16 @@ there.
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; } }
+    padding: 0; }
+  .full-width {
+    max-width: 100% !important; } }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%; }
+  .full-width {
+    max-width: 100% !important; }
   .column,
   .columns {
     margin-left: 4%; }
@@ -540,80 +547,6 @@ nav {
       padding: 0 2rem;
       line-height: 70px; }
 
-.home h1 {
-  text-align: center; }
-
-.home h2 {
-  text-align: center;
-  margin: 0 0 10rem 0; }
-
-.home .subheadline {
-  color: #444;
-  font-weight: 300;
-  font-size: 2rem;
-  text-align: center; }
-
-.home i {
-  display: block;
-  margin: 5% auto;
-  text-align: center;
-  font-size: 7rem;
-  color: #2196F3; }
-
-.home button {
-  display: block;
-  margin: 0 auto; }
-
-.home img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 3rem; }
-
-.home blockquote {
-  font-size: 3rem;
-  text-align: center;
-  line-height: 1.4;
-  font-weight: 100;
-  color: #555; }
-
-.home .testimonial-wrapper {
-  text-align: center; }
-
-.home .avatar {
-  display: inline-block;
-  margin: 0 auto;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  vertical-align: middle;
-  overflow: hidden; }
-
-.home .cite {
-  display: inline-block;
-  font-size: 1.8rem;
-  opacity: 0.6;
-  margin-left: 1rem; }
-
-.center {
-  text-align: center; }
-
-.diagonal {
-  color: #FFFFFF;
-  margin-top: 100px;
-  padding: 50px 0;
-  position: relative;
-  background: #2196F3; }
-  .diagonal blockquote {
-    color: #FFFFFF; }
-
-.diagonal:before {
-  position: absolute;
-  margin-top: -100px;
-  content: '';
-  border-style: solid;
-  border-width: 0 0 5rem 100vw;
-  border-color: transparent #2196F3 #2196F3 transparent; }
-
 /* Typography
 If you change the font family you will need to do so in global.scss
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -668,7 +601,8 @@ h6 {
     font-size: 1.5rem; } }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  font-weight: 300; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -904,15 +838,21 @@ form {
   padding: 3rem 5rem; }
 
 .content p {
-  font-size: 1.8rem; }
+  font-size: 1.9rem; }
 
 .right {
   float: right; }
 
 .title {
-  margin: 7rem 0; }
-  .title h1 {
-    font-weight: bold; }
+  background: linear-gradient(rgba(35, 69, 103, 0.6), rgba(35, 69, 103, 0.6)), url("/dist/img/header.jpeg") no-repeat left top;
+  background-position: cover;
+  margin: 0  0 5rem 0;
+  height: 200px;
+  padding: 8rem 0 0 0; }
+  .title h1, .title h5 {
+    font-weight: bold;
+    color: white;
+    text-align: center; }
 
 .lft-btn {
   float: left; }

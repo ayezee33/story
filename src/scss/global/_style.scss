@@ -1,13 +1,24 @@
 .content p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .right {
   float: right;
 }
 .title {
-  margin: 7rem 0;
-  h1 {
+  background:
+    linear-gradient(
+      rgba(35, 69, 103, .6),
+      rgba(35, 69, 103, .6)
+    ),url("/dist/img/header.jpeg") no-repeat left top;
+  background-position: cover;
+  margin: 0  0 5rem 0;
+  height: 200px;
+  padding: 8rem 0 0 0;
+
+  h1,h5 {
   font-weight: bold;
+  color: white;
+  text-align: center;
   }
 }
 .lft-btn {
